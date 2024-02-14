@@ -13,7 +13,7 @@ provider "github" {
   owner = "BUILDING BLOCK TSS"
 }
 
-resource "github_repository" "main" {
+resource "github_repository" "jelpi-mf" {
   name         = "jelpi-mf"
   description  = "Mi repositorio de prueba"
   visibility   = "private"
