@@ -11,10 +11,7 @@ terraform {
 provider "github" {
   token = var.github_token
   organization = "BUILDING BLOCK TSS"
-  team         = "Team Gus"
-  owners = [
-    "kathe-ud",
-  ]
+  owner = "kathe-ud"
 }
 
 resource "github_repository" "main" {
