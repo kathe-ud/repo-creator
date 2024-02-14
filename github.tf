@@ -18,6 +18,4 @@ resource "github_repository" "main" {
   name         = "jelpi-mf"
   description  = "Mi repositorio de prueba"
   visibility   = "private"
-  project_type = "private" 
-
 }
