@@ -14,7 +14,7 @@ provider "github" {
 }
 
 resource "github_repository" "jelpi-mf" {
-  name         = "jelpi-mf"
+  name         = "jelpi-mf1"
   description  = "Mi repositorio de prueba"
   visibility   = "private"
 }
