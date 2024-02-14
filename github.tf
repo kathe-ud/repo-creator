@@ -12,8 +12,17 @@ provider "github" {
   token = var.github_token
 }
 
-resource "github_repository" "example" {
-  name        = "example2"
-  description = "My awesome codebase"
-  visibility = "public"
+resource "github_repository" "main" {
+  name         = "jelpi-mf"
+  description  = "Mi repositorio de prueba"
+  visibility   = "private"
+  organization = "BUILDING BLOCK TSS"
+  team         = "Team Gus"
+  project_type = "private"
+
+
+  owners = [
+    "kathe-ud",
+  ]
+
 }
