@@ -20,10 +20,10 @@ jobs:
 
       - name: Terraform plan
         env:
-          GITHUB_TOKEN: ${{secrets.TOKEN}}
-        run: terraform plan -var="github_token=${{secrets.TOKEN}}"
+          GITHUB_TOKEN: ${{secrets.TOKEN_ORG}}
+        run: terraform plan -var="github_token=${{secrets.TOKEN_ORG}}"
       
       - name: Terraform apply
         env:
           GITHUB_TOKEN: ${{secrets.TOKEN}}
-        run: terraform apply -var="github_token=${{secrets.TOKEN}}" -auto-approve
+        run: terraform apply -var="github_token=${{secrets.TOKEN_ORG}}" -auto-approve
