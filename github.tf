@@ -18,3 +18,9 @@ resource "github_repository" "example" {
   description  = "Mi repositorio de prueba"
   visibility   = "private"
 }
+
+resource "github_team_repository" "some_team_repo" {
+  team_id    = "team-gus"
+  repository = "example"
+  permission = "pull"
+}
