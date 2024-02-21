@@ -10,7 +10,7 @@ terraform {
 # Configure the GitHub Provider
 provider "github" {
   token = var.github_token
-  owner = "BUILDING-BLOCK-TSS"
+  owner = "BUILDING-BLOCK-TSS/team-gus"
 }
 
 resource "github_repository" "example" {
@@ -21,6 +21,6 @@ resource "github_repository" "example" {
 
 resource "github_team_repository" "some_team_repo" {
   team_id    = "team-gus"
-  repository = "example"
+  repository = "example2"
   permission = "pull"
 }
