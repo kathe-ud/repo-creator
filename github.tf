@@ -10,7 +10,7 @@ terraform {
 # Configure the GitHub Provider
 provider "github" {
   token = var.github_token
-  owner = "BUILDING-BLOCK-TSS/team-gus"
+  owner = "kathe-ud"
 }
 
 resource "github_repository" "example" {
