@@ -14,7 +14,7 @@ provider "github" {
 }
 
 resource "github_repository" "example" {
-  name         = "example"
+  name         = "example2"
   description  = "Mi repositorio de prueba"
   visibility   = "private"
 }
