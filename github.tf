@@ -14,8 +14,8 @@ provider "github" {
 }
 
 data "github_team" "mi_equipo" {
-  organization = "BUILDING-BLOCK-TSS"
-  slug         = "team-gus"
+  owner = "BUILDING-BLOCK-TSS"
+  slug  = "team-gus"
 }
 
 resource "github_repository" "example" {
