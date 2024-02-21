@@ -13,14 +13,19 @@ provider "github" {
   owner = "BUILDING-BLOCK-TSS"
 }
 
+data "github_team" "mi_equipo" {
+  organization = "BUILDING-BLOCK-TSS"
+  slug         = "team-gus"
+}
+
 resource "github_repository" "example" {
-  name         = "example"
+  name         = "example4"
   description  = "Mi repositorio de prueba"
   visibility   = "private"
 }
 
 resource "github_team_repository" "some_team_repo" {
   team_id    = "team-gus"
-  repository = "example"
+  repository = "example4"
   permission = "pull"
 }
