@@ -27,3 +27,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.TOKEN}}
         run: terraform apply -var="github_token=${{secrets.TOKEN_ORG}}" -auto-approve
+      - name: Obtener nombre del repositorio
+        run: echo "Nombre del repositorio: ${{ env.repo_name }}"
