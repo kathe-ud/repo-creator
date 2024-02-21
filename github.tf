@@ -14,13 +14,13 @@ provider "github" {
 }
 
 resource "github_repository" "example" {
-  name         = "example"
+  name         = "example3"
   description  = "Mi repositorio de prueba"
   visibility   = "private"
 }
 
 resource "github_team_repository" "some_team_repo" {
-  team_id    = "team-gus"
-  repository = "example"
+  team_id    = "BUILDING-BLOCK-TSS/team-gus"
+  repository = "example3"
   permission = "pull"
 }
